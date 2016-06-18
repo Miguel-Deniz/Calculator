@@ -1,12 +1,12 @@
-# C++ Console Calculator Version 1.0
+# C++ Console Calculator Version 2.0
 
 Author: Miguel Deniz Lopez
 
 This code runs a simple console application calculator.  Following the textbook "Pogramming: Principles and Practice using C++ (second edition)" by Bjarne Stroustrup.
 
 <h2>Functionality</h2>
-1. Solve expressions following order of operatioins.
-2. Built int functions such as sqrt() and pow()
+1. Solve expressions following order of operations.
+2. Built in functions such as abs(), exp(), sqrt(), and pow()
 3. Declare variables and constants.
 4. Use decimal or roman numerals. ex "20" or "XX"
 5. Several built in commands to help the user.
