@@ -19,6 +19,6 @@ void convert_to_fraction(double ans);
 
 void calculate(Token_stream& ts, Symbol_Table& st);
 
-void clean_up_mess();
+void clean_up_mess(Token_stream& ts);
 
 #endif CALCULATIONS_H

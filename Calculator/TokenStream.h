@@ -1,17 +1,20 @@
 #ifndef TOKEN_STREAM_H
 #define TOKE_STREAM_H
 
+const char ABSOLUTE = 'A';
 const char CLEAR = 'c';
 const char CONST = 'C';
 const char EXIT = 'e';
-const char HELP1 = 'h';
-const char HELP2 = 'H';
+const char EXPONENTIAL = 'E';
+const char HELP = 'h';
 const char LET = 'L';
+const char FACTORIAL = '!';
 const char FRACTION = 'f';
 const char NAME = 'a';
 const char NEWLINE = 'n';
 const char NUMBER = '8';
 const char POW = 'p';
+const char POWER = '^';
 const char PRINT = ';';
 const char PROMPT = '>';
 const char RESULT = '=';
@@ -19,10 +22,13 @@ const char ROMAN_NUMERAL = 'r';
 const char SQRT = 's';
 const char VARIABLES = 'v';
 
+const string ABS_KEY = "abs";
 const string CLEAR_KEY = "clc";
 const string CONST_KEY = "const";
 const string DECL_KEY = "let";
+const string EXPONENTIAL_KEY = "exp";
 const string EXIT_KEY = "exit";
+const string HELP_KEY = "help";
 const string FRACTION_KEY = "frac";
 const string SQRT_KEY = "sqrt";
 const string POW_KEY = "pow";

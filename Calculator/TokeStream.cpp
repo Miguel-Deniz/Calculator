@@ -35,6 +35,8 @@ Token Token_stream::get()
 	case '%':
 	case '=':
 	case ',':
+	case '^':
+	case '!':
 		return Token(ch);
 	case '.':
 	case '0':
@@ -78,10 +80,13 @@ Token Token_stream::get()
 
 			cin.putback(ch);
 
+			if (s == ABS_KEY) return Token(ABSOLUTE);
 			if (s == CLEAR_KEY) return Token(CLEAR);
 			if (s == CONST_KEY) return Token(CONST);
 			if (s == DECL_KEY) return Token(LET);
+			if (s == HELP_KEY) return Token(HELP);
 			if (s == EXIT_KEY) return Token(EXIT);
+			if (s == EXPONENTIAL_KEY) return Token(EXPONENTIAL);
 			if (s == FRACTION_KEY) return Token(FRACTION);
 			if (s == SQRT_KEY) return Token(SQRT);
 			if (s == POW_KEY) return Token(POW);
@@ -152,7 +157,9 @@ void Symbol_Table::set(string s, double d)
 		}
 	}
 
-	error("Set: Undefined variable: ", s);
+	// Instead of an error we declare the variable
+	//error("Set: Undefined variable: ", s);
+	declare(s, d, false);
 }
 
 bool Symbol_Table::is_declared(string var)
