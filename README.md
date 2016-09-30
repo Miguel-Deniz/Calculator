@@ -17,4 +17,4 @@ This code implements a simple console application calculator.  Following the tex
 
 <h2>Setup</h2>
 To install and configure the program you will need an IDE, such as Visual Studio 2013, and a copy of the source code.
-The code does not use any special libraries, and should be easily configured in any environment.  Download the repository to oyr local matchine and run the program.
+The code does not use any special libraries, and should be easily configured in any environment.  Download the repository to your local matchine and run the program.
