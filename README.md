@@ -13,7 +13,9 @@ This code implements a simple console application calculator.  Following the tex
 ![Console Calculator](CalculatorHelpCommand.jpg)
 
 <h2>Sample Expressions</h2>
-![Console Calculator](CalculatorExpressions.jpg)
+<p align="center">
+  <img src="CalculatorExpressions.jpg"/>
+</p>
 
 <h2>Setup</h2>
 To install and configure the program you will need an IDE, such as Visual Studio 2013, and a copy of the source code.
